@@ -13,6 +13,16 @@
     display: none;
 }
 
+@media (max-width:767px){
+  .divider {
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+        background-color: #e5e5e5;
+    }
+}
+
+
 @media screen and (min-width: 1px) and (max-width: 451px) {
     .hamburgerdropdown {
         display: block;
