@@ -23,12 +23,6 @@
 }
 
 
-@media screen and (min-width: 1px) and (max-width: 451px) {
-    .hamburgerdropdown {
-        display: block;
-        }
-}
-
 
 img.filldiv{
     width: 100%;
@@ -88,6 +82,50 @@ img.filldiv{
     font-size: 100%;
     color: black;
 }
+
+
+
+@media (max-width: 375px) {
+   .carousel h4 {
+      font-size: 10px;
+      }
+    .other_captions {top: -5%;
+    }
+    .smaller_caption{
+        font-size: 7px;
+    }
+    .first_caption h2{
+    font-size: 14px;
+    }
+    .first_caption p{
+       font-size: 7px;
+    }
+    .first_caption {
+    top: -18%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 767px){
+    .carousel h4 {
+      font-size: 12px;
+    }
+    .other_captions {top: 0%;
+    }
+    .smaller_caption{
+        font-size: 9px;
+    }
+    .first_caption h2{
+        font-size: 18px;
+    }
+    .first_caption p{
+       font-size: 14px;
+    }
+    .first_caption {
+        top: -10%;
+    }
+}
+
+
 
 .fa-twitter-square {
     color: #0084b4;
