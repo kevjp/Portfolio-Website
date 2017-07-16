@@ -1,132 +1,145 @@
+/*GENERAL STYLES*/
 * {
-    background-color: transparent;
+  background-color: transparent;
 }
 
+/*Using Google fonts Indie Flower*/
 * {
-    font-family: 'Indie Flower', cursive;
-    /*font-family: 'Lato', sans-serif;*/
-    color: #747704;
-    font-weight: 300;
+  font-family: 'Indie Flower', cursive;
+  /*font-family: 'Lato', sans-serif;*/
+  color: #747704;
+  font-weight: 300;
 }
 
-.hamburgerdropdown {
-    display: none;
+.filldiv {
+  width: 100%;
+  height: 100%;
 }
 
-@media (max-width:767px){
-  .divider {
-        height: 1px;
-        margin: 9px 0;
-        overflow: hidden;
-        background-color: #e5e5e5;
-    }
+/*NAVBAR STYLES*/
+.fa-twitter-square {
+  color: #0084b4;
 }
 
-
-
-img.filldiv{
-    width: 100%;
-    height: 100%;
-}
-.text-muted{
-    color: #BCBBBB;
-}
-
-.text-thin {
-    font-weight: 100;
-}
-
-.title-super {
-    font-size: 60px;
-}
-
-.title-profile {
-    margin-top: 20px;
-}
-
-.thicken{
-    border-bottom: 2px solid #747704;
-}
-
-.bolder{
-    font-weight: 900;
-}
+/* CAROUSEL STYLES
+Custom carousel styles below ... Overriding bootstrap.css
+SO MAY NOT CONFORM TO CSS STYLE GUIDE*/
 
 .carousel-indicators li {
-  background-color: #999;
-  background-color: rgba(70,70,70,.25);
+  background-color: white;
 }
 
-.carousel-indicators .active {
+.carousel-indicators,
+.active {
   background-color: #444;
 }
 
 .first_caption {
-    top: 4%;
+  top: 4%;
 }
 
-.first_caption p{
-    font-size: 150%;
+.other_captions {
+  top: 7%;
 }
 
-.other_captions{
-    top: 7%;
-}
-
-.carousel-caption h2, .carousel-caption h4, .larger_caption{
-    color: black;
-    font-weight: bold;
+.carousel-caption-headers,
+.larger_caption {
+  color: black;
+  font-weight: bold;
+  font-size: 150%;
 }
 
 .smaller_caption {
-    font-size: 100%;
-    color: black;
+  font-size: 100%;
+  color: black;
 }
 
+/*END OF CAROUSEL STYLES*/
 
+/* MAIN ARTICLE STYLES - sections below carousel*/
 
+/* Ensures images fill div space*/
+
+.text-muted {
+  color: #bcbbbb;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.title-super {
+  font-size: 60px;
+}
+
+.title-profile {
+  margin-top: 20px;
+}
+
+.thicken {
+  border-bottom: 2px solid #747704;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+/* END OF MAIN ARTICLE STYLES*/
+
+/* MEDIA QUERIES FOR MOBILE AND TABLET SCREENS*/
+
+/*Media query for mobile phones using Bootstrap cut-offs*/
 @media (max-width: 375px) {
-   .carousel h4 {
-      font-size: 10px;
-      }
-    .other_captions {top: -5%;
-    }
-    .smaller_caption{
-        font-size: 7px;
-    }
-    .first_caption h2{
+  .carousel-h4 {
+    font-size: 10px;
+  }
+  .other_captions {
+    top: -5%;
+  }
+  .smaller_caption {
+    font-size: 7px;
+  }
+  .first_caption h2 {
     font-size: 14px;
-    }
-    .first_caption p{
-       font-size: 7px;
-    }
-    .first_caption {
+  }
+  .first_caption p {
+    font-size: 7px;
+  }
+  .first_caption {
     top: -18%;
-    }
+  }
+  .divider {
+    height: 2px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+  }
 }
 
+/*Media query for Tablets using Bootstrap cut-offs*/
 @media (min-width: 376px) and (max-width: 767px){
-    .carousel h4 {
-      font-size: 12px;
-    }
-    .other_captions {top: 0%;
-    }
-    .smaller_caption{
-        font-size: 9px;
-    }
-    .first_caption h2{
-        font-size: 18px;
-    }
-    .first_caption p{
-       font-size: 14px;
-    }
-    .first_caption {
-        top: -10%;
-    }
-}
-
-
-
-.fa-twitter-square {
-    color: #0084b4;
+  .carousel-h4 {
+    font-size: 12px;
+  }
+  .other_captions {
+    top: 0;
+  }
+  .smaller_caption {
+    font-size: 9px;
+  }
+  .carousel-h2 {
+    font-size: 18px;
+  }
+  .larger_caption {
+    font-size: 14px;
+  }
+  .first_caption {
+    top: -10%;
+  }
+  .divider {
+    height: 2px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+  }
 }

@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Kevin Ryan Web Developer</title>
     <meta name="author" content="Kevin Ryan">
-    <meta name="description" content="Web site displays a range of projects previously undertaken and completed by Kevin Ryan. Please feel free to contact him at kevin@ryancodingdesign.com if you require help in setting up a new or working with an existing web site.">
+    <meta name="description" content="Visit the Home of Ryan Coding Design. Web site displays a range of projects previously undertaken and completed by Kevin Ryan. Please feel free to contact him at kevin@ryancodingdesign.com if you require help in setting up a new or working with an existing web site.">
+    <!-- Required to ensure viewport can be standardly re-scaled to different device screen resolutions -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="images/kevin.png">
-    <meta property="og:description" content="Web site displays a range of projects previously undertaken and completed by Kevin Ryan. Please feel free to contact him at kevin@ryancodingdesign.com if you require help in setting up a new or working with an existing web site.">
+    <!-- Image to show in as preview in Facebook and twitter posts  -->
+    <meta property="og:url" content="http://www.ryancodingdesign.com.s3-website.eu-west-2.amazonaws.com/">
     <meta property="og:title" content="Kevin Ryan Web Developer">
+    <meta property="og:description" content="Visit the Home of Ryan Coding Design. Web site displays a range of projects previously undertaken and completed by Kevin Ryan. Please feel free to contact him at kevin@ryancodingdesign.com if you require help in setting up a new or working with an existing web site.">
+    <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/www.ryancodingdesign.com/kevin.gif">
+    <meta property="twitter:url" content="http://www.ryancodingdesign.com.s3-website.eu-west-2.amazonaws.com/">
     <meta name="twitter:title" content="Kevin Ryan Web Developer">
-    <meta name="twitter:image" content="images/kevin.png">
-    <meta name="twitter:description" content="Web site displays a range of projects previously undertaken and completed by Kevin Ryan. Please feel free to contact him at kevin@ryancodingdesign.com if you require help in setting up a new or working with an existing web site.">
+    <meta name="twitter:image" content="https://s3.eu-west-2.amazonaws.com/www.ryancodingdesign.com/kevin.gif">
+    <meta name="twitter:description" content="Visit the Home of Ryan Coding Design. Web site displays a range of projects previously undertaken and completed by Kevin Ryan. Please feel free to contact him at kevin@ryancodingdesign.com if you require help in setting up a new or working with an existing web site.">
     <meta name="twitter:site" content="@kjpryan">
+    <!-- Addition of pointers to style sheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/kevin.png">
-    <!link rel="stylesheet" type="text/css" href="href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/kevin.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Addition of js links -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
+
   <body>
 
-  <!-- Modal -->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Guy's Hospital DNA sequence analysis</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/dna-163466_1280.jpg">
-                    Design and implementation of a DNA sequencing analysis pipeline for Guy's Hospital Genetics Service.
+  <!-- Modal - pop up modals for two of my projects more to follow but just wanted to have a framework for this functionality -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+             <h4 class="modal-title" id="myModalLabel1">Guy's Hospital DNA sequence analysis</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/dna-163466_1280.jpg" alt= "Image of a DNA strand">
+              Design and implementation of a DNA sequencing analysis pipeline for Guy's Hospital Genetics Service.
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">About me</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" alt= "image of Kevin Ryan" src="images/profile3.jpeg">
-                    Profile info for Kevin Ryan.
+    <!-- Secon modal relating to my bio -->
+    <div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel2">About me</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" alt= "image of Kevin Ryan" src="images/profile3.jpeg">
+            <article>
+              <h3>Profile info for Kevin Ryan.</h3>
+              Hello and welcome to the home page of Ryan Coding Solutions (RCS). My name is Kevin Ryan and I founded RCS earlier this year with the remit to work with charity/commercial/industry partners in providing coding solutions to help develop and streamline their operational processes and pipelines. Having previously worked within both academia and the NHS as a Bioinformatician I am an experienced programmer who has worked at the cutting edge of big data systems primarily within the Genetics field. This has included implementing a fully automated analysis pipeline to support the main DNA sequencing facility at Guy's Hospital Gentics Service which serves 3.8 million people in the South East Thames area. I am currently completing a part-time MSc in Data Science at City, University of London having won a Computer Science Scholarship awarded to high calibre students on the programme. I am also currently working towards graduating from the Full Stack Web Developer Nanodegree programme by Udacity. Please see my CV at www.cv.ryancodingsolutions.com for more details. I am a keen advocate of the democratization of coding and data science frameworks to enable us as a community to embrace the amazing potential our fast-moving technological landscape has to offer us in helping us to change our everyday lives. I am keen to work with you on your project whether it is to help develop a website to get your business off the ground or larger projects involving how best to integrate data streams to improve your platform's utility for your customer and employees. Please contact me with any questions at kevin@ryancodingdesign.com
+            </article>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
+      </div>
     </div>
+
+    <!-- TODO: add other modals -->
+
+    <!-- TODO: add modal functionality to read text from text file instead of hard coding text into HTML -->
 
     <!-- Header code -->
     <div class="container">
@@ -95,8 +109,10 @@
               <li><a href="http://blog.ryancodingdesign.com">Visit my blog page</a></li>
               <li><a href="http://cv.ryancodingdesign.com">Check out my CV</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="https://twitter.com/kjpryan"><i class="fa fa-twitter-square" aria-hidden="true"></i> Follow me on twitter</a></li>
-                </ul>
+              <li>
+                <a href="https://twitter.com/kjpryan">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i> Follow me on twitter
+                </a>
               </li>
             </ul>
           </div>
@@ -119,21 +135,21 @@
           <div class="item active">
             <img class ="d-block img-fluid filldiv" alt="Home image for Ryan Coding Design .com -a set of devices" src="images/deviceimage2.jpeg">
             <div class="carousel-caption first_caption">
-              <h2> Home of Ryan Coding Design </h2>
+              <h2 class="carousel-caption-headers carousel-h2"> Home of Ryan Coding Design </h2>
               <p class="larger_caption"> Please contact <a href="mailto:kevin@ryancodingdesign.com?Subject=Query" target="_top">kevin@ryancodingdesign.com</a> for more details</p>
             </div>
           </div>
           <div class="item">
-            <img class ="d-block img-fluid filldiv" alt="Review 1" src="images/Review1.jpeg">
+            <img class ="d-block img-fluid filldiv" alt="Review 1 demo" src="images/Review1.jpeg">
             <div class="carousel-caption other_captions">
-              <h4> Home of Ryan Coding Design </h4>
+              <h4 class="carousel-caption-headers carousel-h4"> Home of Ryan Coding Design </h4>
               <p class="smaller_caption"> Contact <a href="mailto:kevin@ryancodingdesign.com?Subject=Query" target="_top">kevin@ryancodingdesign.com</a> for more details</p>
             </div>
           </div>
           <div class="item">
-            <img class ="d-block img-fluid filldiv" alt="Review 2" src="images/Review2.jpeg">
+            <img class ="d-block img-fluid filldiv" alt="Review 2 demo" src="images/Review2.jpeg">
             <div class="carousel-caption other_captions">
-              <h4> Home of Ryan Coding Design </h4>
+              <h4 class="carousel-caption-headers carousel-h4"> Home of Ryan Coding Design </h4>
               <p class="smaller_caption"> Contact <a href="mailto:kevin@ryancodingdesign.com?Subject=Query" target="_top">kevin@ryancodingdesign.com</a> for more details</p>
             </div>
           </div>
@@ -158,32 +174,40 @@
       </section>
 
       <!-- First row of articles-->
-      <section class="row text-center">
+
+      <!-- About me Bio -->
+      <div class="row text-center">
         <article class="col-md-6">
-          <img class ="img-responsive filldiv" data-toggle="modal" data-target="#aboutme"  alt="Kevin image" src="images/profile.jpg">
+          <img class ="img-responsive filldiv" data-toggle="modal" data-target="#aboutme"  alt="Image of Kevin Ryan" src="images/profile.jpg">
           <h3 class="text-uppercase bolder" ><a href="http://github.com/">About me - Visit my Github account</a></h3>
         </article>
 
+        <!-- CV -->
         <article class="col-md-6">
-          <img class ="img-responsive filldiv" data-toggle="modal" data-target="#project1" alt="Dr Kevin Ryan CV" src="images/Dr_Kevin_Ryan_CV.jpg">
+          <img class ="img-responsive filldiv" data-toggle="modal" data-target="#project1" alt="Dr Kevin Ryan CV image" src="images/Dr_Kevin_Ryan_CV.jpg">
           <h3 class="text-uppercase bolder" ><a href="http://cv.ryancodingdesign.com">Dr Kevin Ryan - CV</a></h3>
         </article>
-      </section>
+      </div>
       <!-- End of First row of articles-->
 
       <!-- Second row of articles-->
-      <section class="row text-center">
+
+      <!-- Guy's Hospital Work -->
+      <div class="row text-center">
         <article class="col-md-6">
-          <img class ="img-responsive filldiv" data-toggle="modal" data-target="#project2" alt="Appify logo" src="images/dna-163466_1280.jpg">
+          <img class ="img-responsive filldiv" data-toggle="modal" data-target="#project2" alt="Theme image of a strand of DNA for project work carried out for Guy's Hospital Genetics Service" src="images/dna-163466_1280.jpg">
           <h3 class="text-uppercase bolder" ><a href="http://github.com/">Guy's Hospital DNA sequence analysis</a></h3>
         </article>
+
+        <!-- Blog page -->
         <article class="col-md-6">
           <img class ="img-responsive filldiv" alt="blog_image theme for ryan coding design .com" src="images/blog_image.jpeg">
           <h3 class="text-uppercase bolder" ><a href="http://blog.ryancodingdesign.com">Visit my blog</a></h3>
         </article>
-      </section>
+      </div>
       <!-- End of Second row of articles-->
     </div>
 
 
-</body></html>
+</body>
+</html>
